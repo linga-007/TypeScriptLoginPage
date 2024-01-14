@@ -1,5 +1,7 @@
 // import Image from "next/image";
+'use client';
 import axios from "axios";
+import { useEffect } from "react";
 // import { useEffect } from "react";
 
 export default function Home() {
@@ -12,10 +14,12 @@ export default function Home() {
     }
   };
 
-  // useEffect(() => {
-  //   // This useEffect will run after the initial render
-  //   handelRequest();
-  // }, []); 
+  useEffect(() => {
+    // This useEffect will run after the initial render
+    handelRequest();
+  }, []); 
+
+
   return (
     <main>
       <div className="w-screen h-screen bg-zinc-50 flex justify-center items-center">
@@ -24,7 +28,7 @@ export default function Home() {
             efful
           </h2>
 
-          <h1 className="text-cyan-300 t-[131px] l-[267px] text-Inter text-3xl font-medium flex pt-5 pb-8 justify-center items-center">
+          <h1 className="text-black t-[131px] l-[267px] text-Inter text-3xl font-medium flex pt-5 pb-8 justify-center items-center">
             Log In
           </h1>
           <div className=" w-[425px] pt-8 ">
