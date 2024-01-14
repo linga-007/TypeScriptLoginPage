@@ -1,5 +1,5 @@
 // import Image from "next/image" affsge;
-'use client';
+"use client";
 import axios from "axios";
 import { useEffect } from "react";
 // import { useEffect } from "react";
@@ -7,7 +7,9 @@ import { useEffect } from "react";
 export default function Home() {
   const handelRequest = async () => {
     try {
-      const response = await axios.get("https://jsonplaceholder.typicode.com/todos");
+      const response = await axios.get(
+        "https://jsonplaceholder.typicode.com/todos"
+      );
       console.log(response);
     } catch (error) {
       console.log(error);
@@ -17,8 +19,7 @@ export default function Home() {
   useEffect(() => {
     // This useEffect will run after the initial render
     handelRequest();
-  }, []); 
-
+  }, []);
 
   return (
     <main>
@@ -36,8 +37,8 @@ export default function Home() {
               Email
             </h2>
             <input
-              placeholder="  admin@gmail.com"
-              className=" block w-[416px] bg-transparent h-[36px] border-2 border-[#8A8A8A] rounded-md text-black"
+              placeholder="admin@gmail.com"
+              className=" block w-[416px] pl-2 bg-transparent h-[36px] border-2 border-[#8A8A8A] rounded-md text-black"
             ></input>
           </div>
           <div className=" w-[425px] pt-8 pb-1 ">
@@ -45,12 +46,13 @@ export default function Home() {
               Password
             </h2>
             <input
-              placeholder="  *********"
-              className=" block w-[416px] bg-transparent h-[36px] border-2 border-[#8A8A8A] rounded-md text-black"
+              type="password"
+              placeholder="*********"
+              className=" block w-[416px] pl-2 bg-transparent h-[36px] border-2 border-[#8A8A8A] rounded-md text-black"
             ></input>
           </div>
           <div className=" w-[425px] pt-8 pb-1 ">
-            <button  className=" block w-[416px] bg-[#49656D] h-[40px] rounded-md">
+            <button className=" block w-[416px] bg-[#49656D] h-[40px] rounded-md">
               Log In
             </button>
           </div>
