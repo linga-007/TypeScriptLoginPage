@@ -1,4 +1,4 @@
-// import Image from "next/image";
+// import Image from "next/image" affsge;
 'use client';
 import axios from "axios";
 import { useEffect } from "react";
