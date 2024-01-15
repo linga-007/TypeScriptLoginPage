@@ -47,7 +47,7 @@ export default function Home() {
             </h2>
             <input
               type="password"
-              placeholder="*********"
+              placeholder="*******"
               className=" block w-[416px] pl-2 bg-transparent h-[36px] border-2 border-[#8A8A8A] rounded-md text-black"
             ></input>
           </div>
