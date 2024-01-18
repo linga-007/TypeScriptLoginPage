@@ -8,7 +8,7 @@ const Card = () => {
       <Image src={Product} width={85} height={85} alt='img' className='rounded-tl-md rounded-bl-md'></Image>
       <div className='w-[233px] h-[82px] pl-3 flex flex-col '>
         <h1 className='text-Inter pb-1 text-sm'>Classic Floret Print Bi-fold Classic Wallets For Women</h1>
-        <h2 className="text-Inter pb-1 text-sm">Price: Rs.599.00</h2>
+        <h2 className="text-Inter pb-1 text-sm">Price: Rs.699.00</h2>
         <h2 className="text-Inter text-sm">Quantity: 01</h2>
       </div>
     </div>
